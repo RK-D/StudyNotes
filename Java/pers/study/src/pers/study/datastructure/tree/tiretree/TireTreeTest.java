@@ -43,6 +43,7 @@ public class TireTreeTest {
                 tireTree.contains(word);
             }
              end = System.nanoTime();
+
             time = (end - start) / 1000000000.0;
             System.out.println("total different words:" + tireTree.size());
             System.out.println("Tire:"+time+"s");
