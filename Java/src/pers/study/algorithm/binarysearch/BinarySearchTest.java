@@ -1,4 +1,4 @@
-package pers.study.algorithm;
+package pers.study.algorithm.binarysearch;
 import java.util.Arrays;
 
 

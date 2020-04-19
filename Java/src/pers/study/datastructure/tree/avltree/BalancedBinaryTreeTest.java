@@ -17,7 +17,8 @@ public class BalancedBinaryTreeTest {
         ArrayList<String> words = new ArrayList<>();
         if(FileOperation.readFile("src\\pers\\study\\txt\\pride-and-prejudice.txt", words)) {
             System.out.println("Total words: " + words.size());
-
+            long start = System.nanoTime();
+            //添加操作
             BalancedBinaryTree<String, Integer> map = new BalancedBinaryTree<>();
             for (String word : words) {
                 if (map.contains(word)) {
@@ -26,6 +27,10 @@ public class BalancedBinaryTreeTest {
                     map.add(word, 1);
                 }
             }
+            //查询操作
+            long end = System.nanoTime();
+            double time = (end - start) / 1000000000.0;
+            System.out.println("AVL: "+ time + "s");
             System.out.println("Total different words: " + map.size());
             System.out.println("Frequency of PRIDE: " + map.get("pride"));
             System.out.println("Frequency of PREJUDICE: " + map.get("prejudice"));
