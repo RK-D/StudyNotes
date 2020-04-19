@@ -3,7 +3,7 @@ package pers.study.datastructure.unionfind;
 import java.util.Random;
 
 /**
- * @author yd
+ * @author rookie
  * @version 1.0
  * @date 2020/4/16 14:06
  */

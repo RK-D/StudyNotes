@@ -8,13 +8,16 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * @author yd
+ * @author rookie
  * @version 1.0
  * @date 2020/4/17 14:16
  *  满二叉树：出叶子结点外，都有左右孩子的二叉树（所以就是树填满了，家家都不是独生子女）
  *  完全二叉树：存在非叶子结点有孩子为空的存在，并且叶子结点们的深度值，相差<=1。（空缺在右下方）
  *  平衡二叉树：左右子树的高度差<=1,所以可能不是完全二叉树，存在倾斜可能，但不严重。
  *  AVL Tree: 平衡二叉树，基于二分搜索树修改，为了让树达到自平衡，添加height变量进行操作，为了保证
+ *
+ *  PS: 当插入有序数据是，BST（二分搜索树）会退化为链表，而AVL不会，所以性能差距巨大
+ *  PS: 当插入有序数据是，BST（二分搜索树）会退化为链表，而AVL不会，所以性能差距巨大
  */
 public class BalancedBinaryTree<K extends Comparable<K>, V>{
     private class Node{
@@ -190,8 +193,10 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         }
         node.value = newValue;
     }
-    /**删除任意元素*/
 
+    /**删除任意元素AVL 需要保证平衡
+     * 维护平衡类似add
+     * */
     public V remove(K key) {
         Node node = getNode(root,key);
         if (node != null){

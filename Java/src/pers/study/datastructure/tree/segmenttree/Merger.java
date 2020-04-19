@@ -1,7 +1,7 @@
 package pers.study.datastructure.tree.segmenttree;
 
 /**
- * @author Dongfanger
+ * @author rookie
  * @date 2020/4/15
  */
 public interface Merger<E> {

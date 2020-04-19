@@ -3,7 +3,7 @@ package pers.study.datastructure.tree.tiretree;
 import java.util.TreeMap;
 
 /**
- * @author yd
+ * @author rookie
  * @version 1.0
  * @date 2020/4/16 0:32
  * 字典树，一种专门用于处理字符串的树，快速（N叉树）
