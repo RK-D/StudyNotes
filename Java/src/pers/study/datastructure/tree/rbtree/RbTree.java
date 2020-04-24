@@ -53,8 +53,7 @@ public class RbTree<K extends Comparable<K>, V> {
         root = add(root, key, value);
     }
 
-    // 向以node为根的二分搜索树中插入元素(key, value)，递归算法
-    // 返回插入新节点后二分搜索树的根
+    // 向以node为根的二分搜索树中插入元素(key, value)，递归算法,返回插入新节点后二分搜索树的根
     private Node add(Node node, K key, V value){
 
         if(node == null){

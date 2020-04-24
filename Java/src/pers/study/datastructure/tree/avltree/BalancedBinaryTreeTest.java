@@ -35,8 +35,14 @@ public class BalancedBinaryTreeTest {
             System.out.println("Frequency of PRIDE: " + map.get("pride"));
             System.out.println("Frequency of PREJUDICE: " + map.get("prejudice"));
             System.out.println("Is BST?: "+ map.isBinarySearchTree());
-        }
+            System.out.println("Is Balanced?: "+ map.isBalanced());
 
-        System.out.println();
+            for(String word : words){
+                map.remove(word);
+                if (!map.isBinarySearchTree() || !map.isBalanced()){
+                    throw new RuntimeException("Error,AVL");
+                }
+            }
+        }
     }
 }

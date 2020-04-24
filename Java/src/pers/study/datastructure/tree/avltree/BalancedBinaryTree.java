@@ -1,11 +1,6 @@
 package pers.study.datastructure.tree.avltree;
 
-import pers.study.datastructure.array.Array;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 /**
  * @author rookie
@@ -37,6 +32,7 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
 
     private Node root;
     private  int size;
+    
     public BalancedBinaryTree(){
         root = null;
         size = 0;
@@ -82,12 +78,12 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         return getHeight(node.left) - getHeight(node.right);
     }
     /**判断是否是一颗平衡二叉树*/
-    public boolean isBalancedTree(){
-        return isBalancedTree(root);
+    public boolean isBalanced(){
+        return isBalanced(root);
     }
 
     /**考虑递归实现，从简单到容易，想递归到底，特殊然后到一半情况*/
-    private boolean isBalancedTree(Node node){
+    private boolean isBalanced(Node node){
         if (node == null){
             return true;
         }
@@ -100,7 +96,7 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
             return false;
         }
         else {
-            return isBalancedTree(node.left) && isBalancedTree(node.right);
+            return isBalanced(node.left) && isBalanced(node.right);
         }
     }
 
@@ -129,9 +125,7 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         //计算平衡值 ，挑出大一遍的孩子记录，左孩子L 右孩子R
         //LL RR属于简单的单向倾斜，因此可以简单操作解决
         int balanceTreeVal = getBalanceTreeVal(node);
-        if (Math.abs(balanceTreeVal) > 1){
-            System.out.println("不平衡" + balanceTreeVal);
-        }
+
         //LL:左孩子高度大于右孩子，左孩子的左孩子大于右孩子
         if (balanceTreeVal > 1 && getBalanceTreeVal(node.left) >= 0) {
             //做倾斜，右旋转
@@ -157,7 +151,7 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         return node;
     }
 
-    public Node getNode(Node node, K key){
+    private Node getNode(Node node, K key){
         if (node == null) {
             return null;
         }
@@ -171,10 +165,7 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
             return getNode(node.right,key);
         }
     }
-
-
-
-
+    /**查询会否存在该元素*/
     public boolean contains(K key) {
         return getNode(root,key) != null;
     }
@@ -210,53 +201,91 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         if (node == null){
             return  null;
         }
+        //最终返回的node
+        Node resNode;
+        //
         if (key.compareTo(node.key) < 0){
             node.left = remove(node.left, key);
-            return node;
+            //开始操作,用resNode暂存原先的返回值，不直接返回，需要后续维护平衡操作
+            resNode = node;
         }
         else if(key.compareTo(node.key) > 0){
             node.right = remove(node.right, key);
-            return node;
+            resNode = node;
         }
         else {
+            /**三个逻辑互斥*/
+            //待删除左子树为空
             if (node.left == null){
                 Node rightNode = node.right;
                 node.right = null;
                 size --;
-                return rightNode;
+                resNode = rightNode;
             }
-            if (node.right == null){
+            //待删除右子树为空
+            else if (node.right == null){
                 Node leftNode = node.left;
                 node.left = null;
                 size --;
-                return leftNode;
+                resNode = leftNode;
             }
-            Node successor = Min(node.right);
-            successor.right = removeMin(node.right);
-            successor.left = node.left;
-            node.left = node.right = null;
-            return  successor;
-        }
-    }
+            else {
+                //待删除字数均不空
+                Node successor = Min(node.right);
+                /**bug修改 源代码：successor.right = removeMin(node.right);
+                 *  修改1：利用后免得递归调用加测bug
+                 * 因为removeMin 代码没有维持平衡，因此我们知道，最新啊肯定存放在successor的key里
+                 * 修改2： 在removeMin代码内添加维护平衡逻辑*/
 
+                successor.right = remove(node.right, successor.key);
+                successor.left = node.left;
+                node.left = node.right = null;
+                resNode = successor;
+            }
+        }
+        //判断下resNode是否为空
+        if(resNode == null) {
+            return null;
+        }
+        //更新node的height,在平衡值最大的子结点基础上加1 变成本省结点额平衡值
+        resNode.height = 1 + Math.max(getHeight(resNode.left),getHeight(resNode.right));
+
+        //计算平衡值 ，挑出大一遍的孩子记录，左孩子L 右孩子R
+        //LL RR属于简单的单向倾斜，因此可以简单操作解决
+        int balanceTreeVal = getBalanceTreeVal(resNode);
+        //LL:左孩子高度大于右孩子，左孩子的左孩子大于右孩子
+        if (balanceTreeVal > 1 && getBalanceTreeVal(resNode.left) >= 0) {
+            //做倾斜，右旋转
+            return rightRotate(resNode);
+        }
+        //RR:右孩子大于最孩子高度，右孩子的左孩子又小于右孩子
+        if (balanceTreeVal < -1 && getBalanceTreeVal(resNode.right) <= 0){
+            return leftRotate(resNode);
+        }
+
+        //LR:左孩子高度大于右孩子，左孩子的左孩子小于右孩子
+        if (balanceTreeVal > 1 && getBalanceTreeVal(resNode.left) < 0){
+            //先左孩子，左旋转（把孩子的R变成L），链接上node的左孩子，变成 LL，然后node自身右旋转
+            resNode.left = leftRotate(resNode.left);
+            return  rightRotate(resNode);
+        }
+        //RL:右孩子大于最孩子高度，右孩子的左孩子又大于右孩子
+        if (balanceTreeVal < -1 && getBalanceTreeVal(resNode.right) > 0){
+            //先右孩子，右旋转（把孩子的L变成R），链接上node的right，变成RR，然后node自身左旋转
+            resNode.right = rightRotate(resNode.right);
+            return leftRotate(resNode);
+        }
+        //不需要维护时直接返回
+        return resNode;
+    }
+    /**查询最小元素*/
     private Node Min(Node node){
         if (node.left == null){
             return node;
         }
         return Min(node.left);
     }
-    private Node removeMin(Node node){
-        if (node.left == null){
-            Node rightNode = node.right;
-            node.right = null;
-            size --;
-        }else {
-            node.left = removeMin(node.left);
-        }
-        return node;
-    }
-
-
+    /**查询最大元素*/
     private Node Max(Node node){
         if (node.right == null){
             return node;
@@ -264,27 +293,13 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         return Max(node.right);
     }
 
-    private Node removeMax(Node node){
-        if (node.right == null){
-            Node leftNode = node.left;
-            node.left = null;
-            size --;
-        }else {
-            node.right = removeMax(node.right);
-        }
-        return node;
-    }
-
     public int size() {
         return size;
     }
 
-
     public boolean isEmpty() {
         return size == 0;
     }
-
-
 
     /**左倾斜，右旋转(在左子树连线上【3个根节点为例】，一般平衡值只要宜大于1 就平衡即 2时就旋转,无论怎么变，必须符合性质
      * 这里根据二分搜索树的性质：
@@ -309,9 +324,9 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         node1.right = node;
         node.left = right2;
         //更新高度，e1 e2 right1 right2本身都是叶子结点，所以不更新，只更新node 和node1，即右旋转的根节点和右孩子
-        //PS：这里顺序是由将就的，自下而上，先更新右孩子，再更新根
-        node.height = Math.max(getHeight(node.left),getHeight(node.right));
-        node1.height = Math.max(getHeight(node.left),getHeight(node.right));
+        //PS：这里顺序是由将就的，自下而上，先更新右孩子，再更新根,都必须加1（非常重要）
+        node.height = Math.max(getHeight(node.left),getHeight(node.right))+1;
+        node1.height = Math.max(getHeight(node.left),getHeight(node.right))+1;
         return node1;
     }
 
@@ -336,8 +351,8 @@ public class BalancedBinaryTree<K extends Comparable<K>, V>{
         node.right = left2;
         //更新高度，e1 e2 right1 right2本身都是叶子结点，所以不更新，只更新node 和node1，即右旋转的根节点和右孩子
         //PS：这里顺序是由将就的，自下而上，先更新右孩子，再更新根
-        node.height = Math.max(getHeight(node.left),getHeight(node.right));
-        node1.height = Math.max(getHeight(node.left),getHeight(node.right));
+        node.height = Math.max(getHeight(node.left),getHeight(node.right))+1;
+        node1.height = Math.max(getHeight(node.left),getHeight(node.right))+1;
         return node1;
     }
 }

@@ -1,4 +1,4 @@
-package pers.study.algorithm.binarysearch;
+package pers.study.binarysearch;
 
 /**
  * @author rookie
