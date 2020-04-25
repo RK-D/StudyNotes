@@ -6,6 +6,8 @@ import pers.study.datastructure.tree.avltree.BalancedBinaryTree;
  * @author rookie
  * @version 1.0
  * @date 2020/4/24 14:31
+ *
+ * 基于avl树的set简单设计
  */
 public class AvlTreeSet<E extends Comparable<E>> implements Set<E> {
     private BalancedBinaryTree<E, Object> balancedBinaryTree;
