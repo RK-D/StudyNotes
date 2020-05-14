@@ -2,7 +2,7 @@
 // Created by rookie on 2020/3/25.
 //
 
-
+#include "pointer.h"
 #include <iostream>
 using namespace std;
 int pointer(){
@@ -20,8 +20,5 @@ int pointer(){
     /**或者*/
     for (int sum = *a, i = 1; i < 4; ++i) {
         sum += *(a+i);
-        
     }
-    cout << "pointer" <<endl;
-    return 0;
-}
+};

@@ -3,8 +3,7 @@ project(basic)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(basic
-        "./pointer/pointer.cpp"
+add_executable(basic test.cpp
         "./derived/derived.cpp"
-        "./module/module.cpp"
-        )
+        "./pointer/pointer.cpp"
+        "./module/module.cpp")
