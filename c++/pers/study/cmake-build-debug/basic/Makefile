@@ -205,6 +205,33 @@ pointer/pointer.cpp.s:
 	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug && $(MAKE) -f basic\CMakeFiles\basic.dir\build.make basic/CMakeFiles/basic.dir/pointer/pointer.cpp.s
 .PHONY : pointer/pointer.cpp.s
 
+test.obj: test.cpp.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.cpp.obj:
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug && $(MAKE) -f basic\CMakeFiles\basic.dir\build.make basic/CMakeFiles/basic.dir/test.cpp.obj
+.PHONY : test.cpp.obj
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug && $(MAKE) -f basic\CMakeFiles\basic.dir\build.make basic/CMakeFiles/basic.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug && $(MAKE) -f basic\CMakeFiles\basic.dir\build.make basic/CMakeFiles/basic.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -223,6 +250,9 @@ help:
 	@echo ... pointer/pointer.obj
 	@echo ... pointer/pointer.i
 	@echo ... pointer/pointer.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

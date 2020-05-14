@@ -25,7 +25,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
-					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
@@ -48,7 +47,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
-					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
@@ -91,7 +89,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
-					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
@@ -114,7 +111,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
-					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
@@ -146,6 +142,9 @@
 			<Option target="basic"/>
 		</Unit>
 		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/pointer/pointer.h">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/test.cpp">
 			<Option target="basic"/>
 		</Unit>
 		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/main.cpp">

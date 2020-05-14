@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Github/RK-D/StudyNotes/c++/pers/study/basic/derived/derived.cpp" "E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/basic.dir/derived/derived.cpp.obj"
   "E:/Github/RK-D/StudyNotes/c++/pers/study/basic/module/module.cpp" "E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/basic.dir/module/module.cpp.obj"
   "E:/Github/RK-D/StudyNotes/c++/pers/study/basic/pointer/pointer.cpp" "E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj"
+  "E:/Github/RK-D/StudyNotes/c++/pers/study/basic/test.cpp" "E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/basic.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../basic"
-  ".././basic"
   )
 
 # Targets to which this target links.

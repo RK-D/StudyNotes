@@ -75,7 +75,7 @@ preinstall: basic/preinstall
 CMakeFiles/study.dir/all:
 	$(MAKE) -f CMakeFiles\study.dir\build.make CMakeFiles/study.dir/depend
 	$(MAKE) -f CMakeFiles\study.dir\build.make CMakeFiles/study.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target study"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=6,7 "Built target study"
 .PHONY : CMakeFiles/study.dir/all
 
 # Build rule for subdir invocation for target.
@@ -120,12 +120,12 @@ basic/preinstall:
 basic/CMakeFiles/basic.dir/all:
 	$(MAKE) -f basic\CMakeFiles\basic.dir\build.make basic/CMakeFiles/basic.dir/depend
 	$(MAKE) -f basic\CMakeFiles\basic.dir\build.make basic/CMakeFiles/basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target basic"
 .PHONY : basic/CMakeFiles/basic.dir/all
 
 # Build rule for subdir invocation for target.
 basic/CMakeFiles/basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 basic/CMakeFiles/basic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles 0
 .PHONY : basic/CMakeFiles/basic.dir/rule

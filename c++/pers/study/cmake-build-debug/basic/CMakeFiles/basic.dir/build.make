@@ -56,19 +56,19 @@ include basic/CMakeFiles/basic.dir/progress.make
 # Include the compile flags for this target's objects.
 include basic/CMakeFiles/basic.dir/flags.make
 
-basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj: basic/CMakeFiles/basic.dir/flags.make
-basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj: basic/CMakeFiles/basic.dir/includes_CXX.rsp
-basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj: ../basic/pointer/pointer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj"
-	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\basic.dir\pointer\pointer.cpp.obj -c E:\Github\RK-D\StudyNotes\c++\pers\study\basic\pointer\pointer.cpp
+basic/CMakeFiles/basic.dir/test.cpp.obj: basic/CMakeFiles/basic.dir/flags.make
+basic/CMakeFiles/basic.dir/test.cpp.obj: basic/CMakeFiles/basic.dir/includes_CXX.rsp
+basic/CMakeFiles/basic.dir/test.cpp.obj: ../basic/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object basic/CMakeFiles/basic.dir/test.cpp.obj"
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\basic.dir\test.cpp.obj -c E:\Github\RK-D\StudyNotes\c++\pers\study\basic\test.cpp
 
-basic/CMakeFiles/basic.dir/pointer/pointer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic.dir/pointer/pointer.cpp.i"
-	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Github\RK-D\StudyNotes\c++\pers\study\basic\pointer\pointer.cpp > CMakeFiles\basic.dir\pointer\pointer.cpp.i
+basic/CMakeFiles/basic.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic.dir/test.cpp.i"
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Github\RK-D\StudyNotes\c++\pers\study\basic\test.cpp > CMakeFiles\basic.dir\test.cpp.i
 
-basic/CMakeFiles/basic.dir/pointer/pointer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic.dir/pointer/pointer.cpp.s"
-	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Github\RK-D\StudyNotes\c++\pers\study\basic\pointer\pointer.cpp -o CMakeFiles\basic.dir\pointer\pointer.cpp.s
+basic/CMakeFiles/basic.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic.dir/test.cpp.s"
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Github\RK-D\StudyNotes\c++\pers\study\basic\test.cpp -o CMakeFiles\basic.dir\test.cpp.s
 
 basic/CMakeFiles/basic.dir/derived/derived.cpp.obj: basic/CMakeFiles/basic.dir/flags.make
 basic/CMakeFiles/basic.dir/derived/derived.cpp.obj: basic/CMakeFiles/basic.dir/includes_CXX.rsp
@@ -84,10 +84,24 @@ basic/CMakeFiles/basic.dir/derived/derived.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic.dir/derived/derived.cpp.s"
 	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Github\RK-D\StudyNotes\c++\pers\study\basic\derived\derived.cpp -o CMakeFiles\basic.dir\derived\derived.cpp.s
 
+basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj: basic/CMakeFiles/basic.dir/flags.make
+basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj: basic/CMakeFiles/basic.dir/includes_CXX.rsp
+basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj: ../basic/pointer/pointer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj"
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\basic.dir\pointer\pointer.cpp.obj -c E:\Github\RK-D\StudyNotes\c++\pers\study\basic\pointer\pointer.cpp
+
+basic/CMakeFiles/basic.dir/pointer/pointer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic.dir/pointer/pointer.cpp.i"
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Github\RK-D\StudyNotes\c++\pers\study\basic\pointer\pointer.cpp > CMakeFiles\basic.dir\pointer\pointer.cpp.i
+
+basic/CMakeFiles/basic.dir/pointer/pointer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic.dir/pointer/pointer.cpp.s"
+	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Github\RK-D\StudyNotes\c++\pers\study\basic\pointer\pointer.cpp -o CMakeFiles\basic.dir\pointer\pointer.cpp.s
+
 basic/CMakeFiles/basic.dir/module/module.cpp.obj: basic/CMakeFiles/basic.dir/flags.make
 basic/CMakeFiles/basic.dir/module/module.cpp.obj: basic/CMakeFiles/basic.dir/includes_CXX.rsp
 basic/CMakeFiles/basic.dir/module/module.cpp.obj: ../basic/module/module.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object basic/CMakeFiles/basic.dir/module/module.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object basic/CMakeFiles/basic.dir/module/module.cpp.obj"
 	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && C:\MinGw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\basic.dir\module\module.cpp.obj -c E:\Github\RK-D\StudyNotes\c++\pers\study\basic\module\module.cpp
 
 basic/CMakeFiles/basic.dir/module/module.cpp.i: cmake_force
@@ -100,21 +114,23 @@ basic/CMakeFiles/basic.dir/module/module.cpp.s: cmake_force
 
 # Object files for target basic
 basic_OBJECTS = \
-"CMakeFiles/basic.dir/pointer/pointer.cpp.obj" \
+"CMakeFiles/basic.dir/test.cpp.obj" \
 "CMakeFiles/basic.dir/derived/derived.cpp.obj" \
+"CMakeFiles/basic.dir/pointer/pointer.cpp.obj" \
 "CMakeFiles/basic.dir/module/module.cpp.obj"
 
 # External object files for target basic
 basic_EXTERNAL_OBJECTS =
 
-basic/basic.exe: basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj
+basic/basic.exe: basic/CMakeFiles/basic.dir/test.cpp.obj
 basic/basic.exe: basic/CMakeFiles/basic.dir/derived/derived.cpp.obj
+basic/basic.exe: basic/CMakeFiles/basic.dir/pointer/pointer.cpp.obj
 basic/basic.exe: basic/CMakeFiles/basic.dir/module/module.cpp.obj
 basic/basic.exe: basic/CMakeFiles/basic.dir/build.make
 basic/basic.exe: basic/CMakeFiles/basic.dir/linklibs.rsp
 basic/basic.exe: basic/CMakeFiles/basic.dir/objects1.rsp
 basic/basic.exe: basic/CMakeFiles/basic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable basic.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable basic.exe"
 	cd /d E:\Github\RK-D\StudyNotes\c++\pers\study\cmake-build-debug\basic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\basic.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
