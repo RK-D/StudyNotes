@@ -1,0 +1,6 @@
+E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/CMakeFiles/study.dir
+E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/rebuild_cache.dir
+E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/basic.dir
+E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/CMakeFiles/edit_cache.dir

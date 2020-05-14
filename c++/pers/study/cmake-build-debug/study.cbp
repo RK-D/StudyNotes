@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="study"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\basic\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="study">
+				<Option output="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/study.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 study"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="study/fast">
+				<Option output="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/study.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 study/fast"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="basic">
+				<Option output="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/basic.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 basic"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="basic/fast">
+				<Option output="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/basic.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/basic"/>
+					<Add directory="E:/Github/RK-D/StudyNotes/c++/pers/study/./basic"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 basic/fast"/>
+					<CompileFile command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGw/bin/mingw32-make.exe -f &quot;E:/Github/RK-D/StudyNotes/c++/pers/study/cmake-build-debug/basic/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/derived/derived.cpp">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/derived/derived.h">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/module/module.cpp">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/module/module.h">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/pointer/pointer.cpp">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/pointer/pointer.h">
+			<Option target="basic"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/main.cpp">
+			<Option target="study"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/Github/RK-D/StudyNotes/c++/pers/study/basic/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\basic\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

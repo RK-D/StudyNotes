@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Github/RK-D/StudyNotes/c++/pers/study/basic/pointer/pointer.cpp
+iostream
+-
+
+E:/Github/RK-D/StudyNotes/c++/pers/study/main.cpp
+iostream
+-
+vector
+-
+basic/pointer/pointer.cpp
+E:/Github/RK-D/StudyNotes/c++/pers/study/basic/pointer/pointer.cpp
+
