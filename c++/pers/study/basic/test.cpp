@@ -1,9 +1,7 @@
 #include <iostream>
 
-
-
 using namespace std;
-int main() {
+int test() {
 //    test1 object1("object1",100,200),object2("object2"),object3;
 //    object1.fun1();
 //    object2.fun2(123);
