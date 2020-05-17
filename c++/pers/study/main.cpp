@@ -1,6 +1,9 @@
 #include <iostream>
-
+#include "./basic/array/vectorTest.cpp"
+using namespace std;
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+//    cout << "Hello, World!" << endl;
+
+    vectorTest();
     return 0;
 }
