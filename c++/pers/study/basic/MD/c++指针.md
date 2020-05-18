@@ -29,7 +29,7 @@
 * （3）应该养成在声明时就为变量赋初值的习惯，但在某些特殊场合则只能声明，如头文件中对外部变量的声明，下面是一些典型的例子。
     ```
   auto int a;
-  static int size = 10;
+  static int getSize = 10;
   const double pi = 3.14;
   register int b = 2; 
     ```
@@ -100,7 +100,7 @@
     b      e2;
     c      e3;
     如果你的结构体中有一个变量data;
-    那么引用时就会是这样的：e1.data=1,e2.data=2;e3->data=3;
+    那么引用时就会是这样的：e1.val=1,e2.val=2;e3->val=3;
     就相当于，e3是一个指向这种结构体的一个指针。
 
     */

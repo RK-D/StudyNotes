@@ -18,6 +18,6 @@ set(CMAKE_CXX_STANDARD 11)
 #SET(CMAKE_BUILE_TYPE DEBUG)
 
 # Target
-add_executable(study main.cpp "basic")#上述方法有问题，这种方法才有效
+add_executable(study main.cpp "basic" "algorithm" "datasource")#上述方法有问题，这种方法才有效
 
 #ADD_SUBDIRECTORY("basic")                              #添加子目录

@@ -12,7 +12,7 @@ int vectorTest(){
     vector<int> vec = {1,2,3,4};
     map<T,T> mp;
     //目前的vec大小
-    cout << "vec size :" << vec.size() << endl;
+    cout << "vec getSize :" << vec.size() << endl;
     //vec真正的容量
     cout << "vec capacity :" << vec.capacity() << endl;
     //添加一个100 （尾部）
