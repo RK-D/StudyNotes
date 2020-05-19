@@ -2,7 +2,7 @@
 // Created by rookie on 2020/3/23.
 //
 
-#include "singlyLinkedList.h"
+#include "SinglyLinkedList.h"
 #include <iostream>
 /**单链表，此处实现只支持int 类型 ，后续会使用template 模板函数（java 泛型）来代替 int 这样可以支持更多的类型的参数传递*/
 

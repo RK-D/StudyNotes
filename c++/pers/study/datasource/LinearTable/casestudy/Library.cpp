@@ -151,7 +151,7 @@ void status() {
     for (i = 'A'; i <= 'Z'; i++)
         if (!catalog[i].empty())
             cout << catalog[i];
-    cout << "\nThe following people are using the library:\n\n";
+    cout << "\nThe following people are using the Library:\n\n";
     for (i = 'A'; i <= 'Z'; i++)
         if (!people[i].empty())
             cout << people[i];
@@ -200,7 +200,7 @@ void checkOutBook() {
                      people[patron.name[0]].end(),patron);
     CheckedOutBook checkedOutBook(authorRef,bookRef);
     if (patronRef == people[patron.name[0]].end()) { // a new patron
-        patron.books.push_front(checkedOutBook);    // in the library;
+        patron.books.push_front(checkedOutBook);    // in the Library;
         people[patron.name[0]].push_front(patron);
         (*bookRef).patron = &*people[patron.name[0]].begin();
     }

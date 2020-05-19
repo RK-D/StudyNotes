@@ -6,7 +6,7 @@
 #define STUDY_LIBRARY_H
 
 
-class library {
+class Library {
 
 };
 
