@@ -1,4 +1,4 @@
-package pers.study.designpatterns.creationmode;
+package pers.study.designpatterns.creationmode.Singleton;
 
 /**
  * @author rookie
